@@ -37,4 +37,4 @@ def parse(category, search):
         vacancies.extend(get_content(html.text))
         return vacancies
     else:
-        print('Error')
+        print('Something went wrong...')

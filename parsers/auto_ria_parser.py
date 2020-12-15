@@ -49,7 +49,6 @@ def get_content(html):
 
 def threaded_parser(brand):
     """ Threaded parser to parse car data from auto.ria.com"""
-    print('Threaded parser')
     page = 1
     url = f'https://auto.ria.com/uk/newauto/marka-{brand}/?page={page}'
     html = get_html(url)
@@ -58,21 +57,20 @@ def threaded_parser(brand):
         cars = []
         urls = []
         pages_count = get_pages_count(html.text)
+        for page in range(1, pages_count + 1):
+            print(f'Parsing {brand}, {page} page of {pages_count}')
+            urls.append(f'https://auto.ria.com/uk/newauto/marka-{brand}/?page={page}')
         with concurrent.futures.ThreadPoolExecutor() as executor:
-            for page in range(1, pages_count + 1):
-                print(f'Parsing {brand}, {page} page of {pages_count}')
-                urls.append(f'https://auto.ria.com/uk/newauto/marka-{brand}/?page={page}')
             results = [executor.submit(get_html, url) for url in urls]
             for f in concurrent.futures.as_completed(results):
                 cars.extend(get_content(f.result().text))
         return sorted(cars, key=lambda x: x['price'], reverse=True)
     else:
-        print('Error')
+        print('Something went wrong...')
 
 
 def sync_parse(brand):
     """ Synchronous parser to parse car data from auto.ria.com"""
-    print('Synchronous parser')
     url = f'https://auto.ria.com/uk/newauto/marka-{brand}/'
     html = get_html(url)
     get_all_brand_names()
@@ -85,4 +83,4 @@ def sync_parse(brand):
             cars.extend(get_content(html.text))
         return sorted(cars, key=lambda x: x['price'], reverse=True)
     else:
-        print('Error')
+        print('Something went wrong...')
