@@ -27,7 +27,7 @@ def search_car_by_parameter(bot, message):
                                                'Please enter valid brand name')
     else:
         count = 0
-        cars = auto_ria_parser.parse(message.text)
+        cars = auto_ria_parser.threaded_parser(message.text)
         print(f'{(time.time() - t1)} sec')
         for car in cars:
             title = car.get('title')

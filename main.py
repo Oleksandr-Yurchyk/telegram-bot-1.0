@@ -1,14 +1,14 @@
 import telebot
 from telebot.types import Message
 
-from config import TOKEN
+from config import BOT_TOKEN
 from keyboards import welcome_markup
 from keyboards import auto_ria_markup
 from keyboards import dou_markup
 from common import search_car_by_parameter
 from common import search_vacancy_by_parameter
 
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(BOT_TOKEN)
 
 
 @bot.message_handler(commands=['start'])
