@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from config import logger
 
 URL = f'https://jobs.dou.ua/vacancies'
 HEADERS = {
@@ -32,9 +33,10 @@ def get_content(html):
 
 def parse(category, search):
     html = get_html(params={'category': category, 'search': search, 'descr': 1})
+    logger.info(f'Status code for this request - {html.status_code}')
     if html.status_code == 200:
         vacancies = []
         vacancies.extend(get_content(html.text))
         return vacancies
     else:
-        print('Something went wrong...')
+        logger.info('Something went wrong...')

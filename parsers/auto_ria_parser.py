@@ -2,6 +2,8 @@ import concurrent.futures
 import requests
 from bs4 import BeautifulSoup
 
+from config import logger
+
 HEADERS = {
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (HTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
     'accept': '*/*'}
@@ -53,12 +55,13 @@ def threaded_parser(brand):
     url = f'https://auto.ria.com/uk/newauto/marka-{brand}/?page={page}'
     html = get_html(url)
     get_all_brand_names()
+    logger.info(f'Status code for this request - {html.status_code}')
     if html.status_code == 200:
         cars = []
         urls = []
         pages_count = get_pages_count(html.text)
         for page in range(1, pages_count + 1):
-            print(f'Parsing {brand}, {page} page of {pages_count}')
+            logger.info(f'Parsing {brand}, {page} page of {pages_count}')
             urls.append(f'https://auto.ria.com/uk/newauto/marka-{brand}/?page={page}')
         with concurrent.futures.ThreadPoolExecutor() as executor:
             results = [executor.submit(get_html, url) for url in urls]
@@ -66,7 +69,7 @@ def threaded_parser(brand):
                 cars.extend(get_content(f.result().text))
         return sorted(cars, key=lambda x: x['price'], reverse=True)
     else:
-        print('Something went wrong...')
+        logger.info('Something went wrong...')
 
 
 def sync_parse(brand):
@@ -74,13 +77,14 @@ def sync_parse(brand):
     url = f'https://auto.ria.com/uk/newauto/marka-{brand}/'
     html = get_html(url)
     get_all_brand_names()
+    logger.info(f'Status code for this request - {html.status_code}')
     if html.status_code == 200:
         cars = []
         pages_count = get_pages_count(html.text)
         for page in range(1, pages_count + 1):
-            print(f'Parsing {brand}, {page} page of {pages_count}')
+            logger.info(f'Parsing {brand}, {page} page of {pages_count}')
             html = get_html(url, params={'page': page})
             cars.extend(get_content(html.text))
         return sorted(cars, key=lambda x: x['price'], reverse=True)
     else:
-        print('Something went wrong...')
+        logger.info('Something went wrong...')
