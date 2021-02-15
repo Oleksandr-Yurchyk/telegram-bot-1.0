@@ -42,7 +42,7 @@ def get_content(html):
     for item in items:
         cars.append({
             'title': item.select_one('h3.proposition_name').string.strip(),
-            'link': f"{url}{item.select_one('h3.proposition_name a').get('href')}",
+            'link': f"{url}{item.select_one('div.proposition .proposition_link').get('href')}",
             'price': item.select_one('span.green.bold.size18').string.strip(),
             'city': item.select_one('div.proposition_region.size13 strong').string.strip(),
         })

@@ -1,71 +1,13 @@
-2020-12-15T21:18:43.886005+0200 INFO Successful got all elements from html
-2020-12-15T21:41:15.118729+0200 INFO Parsing Bmw, 1 page of 6
-2020-12-15T21:41:15.119613+0200 INFO Parsing Bmw, 2 page of 6
-2020-12-15T21:41:15.120306+0200 INFO Parsing Bmw, 3 page of 6
-2020-12-15T21:41:15.120748+0200 INFO Parsing Bmw, 4 page of 6
-2020-12-15T21:41:15.120957+0200 INFO Parsing Bmw, 5 page of 6
-2020-12-15T21:41:15.121174+0200 INFO Parsing Bmw, 6 page of 6
-2020-12-15T21:49:49.181704+0200 INFO Parsing Bmw, 1 page of 6
-2020-12-15T21:49:49.182087+0200 INFO Parsing Bmw, 2 page of 6
-2020-12-15T21:49:49.182288+0200 INFO Parsing Bmw, 3 page of 6
-2020-12-15T21:49:49.182447+0200 INFO Parsing Bmw, 4 page of 6
-2020-12-15T21:49:49.182591+0200 INFO Parsing Bmw, 5 page of 6
-2020-12-15T21:49:49.182727+0200 INFO Parsing Bmw, 6 page of 6
-2020-12-15T21:52:02.507967+0200 INFO Status code for this request - 200
-2020-12-15T21:52:02.670067+0200 INFO Parsing Tesla, 1 page of 1
-2020-12-15T21:56:27.181924+0200 INFO Searching car with parameters - Tesla
-2020-12-15T21:56:30.287515+0200 INFO Status code for this request - 503
-2020-12-15T21:56:30.287953+0200 INFO Something went wrong...
-2020-12-15T21:56:55.729751+0200 INFO Searching car with parameters - Lamborghini
-2020-12-15T21:56:58.939343+0200 INFO Status code for this request - 200
-2020-12-15T21:56:59.107565+0200 INFO Parsing Lamborghini, 1 page of 1
-2020-12-15T21:58:14.576798+0200 INFO Searching car with parameters - Audi
-2020-12-15T21:58:17.082783+0200 INFO Status code for this request - 200
-2020-12-15T21:58:17.283994+0200 INFO Parsing Audi, 1 page of 6
-2020-12-15T21:58:17.284315+0200 INFO Parsing Audi, 2 page of 6
-2020-12-15T21:58:17.284488+0200 INFO Parsing Audi, 3 page of 6
-2020-12-15T21:58:17.284642+0200 INFO Parsing Audi, 4 page of 6
-2020-12-15T21:58:17.284791+0200 INFO Parsing Audi, 5 page of 6
-2020-12-15T21:58:17.285002+0200 INFO Parsing Audi, 6 page of 6
-2020-12-15T21:58:50.827816+0200 INFO 110 cars found
-2020-12-15T22:10:27.785845+0200 INFO Searching car with parameters - Citroen
-2020-12-15T22:10:30.646387+0200 INFO Status code for this request - 200
-2020-12-15T22:10:30.858991+0200 INFO Parsing Citroen, 1 page of 17
-2020-12-15T22:10:30.859318+0200 INFO Parsing Citroen, 2 page of 17
-2020-12-15T22:10:30.859511+0200 INFO Parsing Citroen, 3 page of 17
-2020-12-15T22:10:30.859676+0200 INFO Parsing Citroen, 4 page of 17
-2020-12-15T22:10:30.859902+0200 INFO Parsing Citroen, 5 page of 17
-2020-12-15T22:10:30.860094+0200 INFO Parsing Citroen, 6 page of 17
-2020-12-15T22:10:30.860257+0200 INFO Parsing Citroen, 7 page of 17
-2020-12-15T22:10:30.860430+0200 INFO Parsing Citroen, 8 page of 17
-2020-12-15T22:10:30.860595+0200 INFO Parsing Citroen, 9 page of 17
-2020-12-15T22:10:30.860937+0200 INFO Parsing Citroen, 10 page of 17
-2020-12-15T22:10:30.861169+0200 INFO Parsing Citroen, 11 page of 17
-2020-12-15T22:10:30.861426+0200 INFO Parsing Citroen, 12 page of 17
-2020-12-15T22:10:30.861587+0200 INFO Parsing Citroen, 13 page of 17
-2020-12-15T22:10:30.861740+0200 INFO Parsing Citroen, 14 page of 17
-2020-12-15T22:10:30.862007+0200 INFO Parsing Citroen, 15 page of 17
-2020-12-15T22:10:30.862179+0200 INFO Parsing Citroen, 16 page of 17
-2020-12-15T22:10:30.862401+0200 INFO Parsing Citroen, 17 page of 17
-2020-12-15T22:11:34.417125+0200 INFO Searching car with parameters - Tesla
-2020-12-15T22:11:37.014988+0200 INFO Status code for this request - 200
-2020-12-15T22:11:37.164477+0200 INFO Parsing Tesla, 1 page of 1
-2020-12-15T22:11:38.291950+0200 INFO 1 cars found
-2020-12-15T22:40:59.319392+0200 INFO Searching car with parameters - Opel
-2020-12-15T22:41:02.426133+0200 INFO Status code for this request - 200
-2020-12-15T22:41:02.598585+0200 INFO Parsing Opel, 1 page of 7
-2020-12-15T22:41:02.598866+0200 INFO Parsing Opel, 2 page of 7
-2020-12-15T22:41:02.599013+0200 INFO Parsing Opel, 3 page of 7
-2020-12-15T22:41:02.599153+0200 INFO Parsing Opel, 4 page of 7
-2020-12-15T22:41:02.599291+0200 INFO Parsing Opel, 5 page of 7
-2020-12-15T22:41:02.599425+0200 INFO Parsing Opel, 6 page of 7
-2020-12-15T22:41:02.599558+0200 INFO Parsing Opel, 7 page of 7
-2020-12-15T22:42:23.471244+0200 INFO Searching vacancy with parameters - Python, junior
-2020-12-15T22:42:25.315105+0200 INFO Status code for this request - 200
-2020-12-15T22:42:27.609243+0200 INFO 15 vacancies found
-2020-12-15T22:42:33.030103+0200 INFO Searching vacancy with parameters - Java, junior
-2020-12-15T22:42:34.025774+0200 INFO Status code for this request - 200
-2020-12-15T22:42:37.090900+0200 INFO 20 vacancies found
-2020-12-15T22:42:45.199009+0200 INFO Searching vacancy with parameters - Php, junior
-2020-12-15T22:42:46.208510+0200 INFO Status code for this request - 200
-2020-12-15T22:42:49.438002+0200 INFO 20 vacancies found
+2021-02-15T12:14:53.150368+0200 INFO Searching vacancy with parameters - /start
+2021-02-15T12:15:17.843189+0200 INFO Searching vacancy with parameters - Python, senior
+2021-02-15T12:15:19.058880+0200 INFO Status code for this request - 200
+2021-02-15T12:15:21.633576+0200 INFO 20 vacancies found
+2021-02-15T12:15:36.603473+0200 INFO Searching vacancy with parameters - python, senior django
+2021-02-15T12:15:37.629276+0200 INFO Status code for this request - 200
+2021-02-15T12:15:39.811067+0200 INFO 20 vacancies found
+2021-02-15T12:16:02.185187+0200 INFO Searching vacancy with parameters - python, data science
+2021-02-15T12:16:03.219916+0200 INFO Status code for this request - 200
+2021-02-15T12:16:05.661992+0200 INFO 20 vacancies found
+2021-02-15T12:16:17.625306+0200 INFO Searching car with parameters - Chevrolet
+2021-02-15T12:16:20.160548+0200 INFO Status code for this request - 200
+2021-02-15T12:16:20.297057+0200 INFO Parsing Chevrolet, 1 page of 1
