@@ -14,6 +14,6 @@ Edit config.py:
 
 ``` TOKEN = 'YOUR_TOKEN' ```
 
-To start bot, run this command:
+Start bot by running this command:
 
 ``` python3 main.py  ```
