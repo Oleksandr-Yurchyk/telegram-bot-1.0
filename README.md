@@ -17,3 +17,6 @@ Edit config.py:
 Start bot by running this command:
 
 ``` python3 main.py  ```
+
+## Changes in autoria parser!
+Currently autoria parser is not stable due to the unstable site work.
